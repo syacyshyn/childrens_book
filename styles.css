@@ -1,0 +1,60 @@
+body {
+    height: 90vh;
+    width: 100%;
+}
+
+img {
+    max-width: 350px;
+    max-height: 350px;
+    min-height: 350px;
+    min-width: 350px;
+
+}
+
+#ballerina-bright-book-cover {
+    display: flex;
+    justify-content: center;
+}
+
+#ballerina-bright-book-cover-image {
+    /*Change to display:none on cover click*/
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#ballerina-bright-book-cover-image:hover {
+    animation: tilt-shaking 0.4s;
+    animation-iteration-count: infinite;
+}
+
+#book-container {
+    /*Change to flex when book starts(on cover click)*/
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive, serif;
+    font-size: 25px;
+    color: rebeccapurple;
+}
+
+.flip-arrow {
+    border-style: none;
+}
+
+.flip-arrow:hover {
+    background-color: deeppink;
+    cursor: pointer;
+}
